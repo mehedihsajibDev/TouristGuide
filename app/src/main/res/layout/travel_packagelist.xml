@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/place_img"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/packageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/place_img"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/place_img"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Cox's Bazar"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#00695C"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_alignStart="@+id/packageName"
+                    android:layout_below="@+id/packageName"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/tourDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/time"
+                    android:layout_toEndOf="@+id/time"
+                    android:text="5 Days, 4 Night"
+                    android:textSize="12sp"
+                    android:textColor="#00695C"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/money"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_alignBottom="@+id/tourDuration"
+                    android:layout_toEndOf="@+id/tourDuration"
+                    android:src="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/tourPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/money"
+                    android:layout_toEndOf="@+id/money"
+                    android:text="10,000/-"
+                    android:textSize="12sp"
+                    android:textColor="#00695C"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tourDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/packageName"
+                    android:layout_below="@+id/time"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/demoData"
+                    android:textColor="#00695C"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/loc_img"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignStart="@+id/tourDetails"
+                    android:layout_below="@+id/tourDetails"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/loc_img"
+                    android:layout_below="@+id/tourDetails"
+                    android:text="Dhaka, Rajshahi, pabna, rangpur"
+                    android:textColor="#00695C"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"></View>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
